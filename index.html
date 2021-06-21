@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Final_Project</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="login" style="display: block; height: 6vh; width: 100%; background-color: blue;" id="lg">
+
+  <br>
+
+  <label style="font-size: 20px;">username: </label><input type="text" id="uid" style="font-size: 20px;"><br><br>
+
+  <label style="font-size: 20px;">password: </label><input type="password" id="upass" style="font-size: 20px;"><br><br>
+
+  <input type="button" value="Login" class="submit" onclick=grade() style="font-size: 20px;">
+
+</div>
+
+<div class="grade" style="display: none; height: 6vh; width: 100%; background-color: blue;" id="gd" style="font-size: 20px;">
+
+  <br>
+
+  <input type="button" value="Grade View" class="view" id="view" style="font-size: 20px;" onclick=grade_view()>
+
+  <input type="button" value="Add Grade" class="add" id="add" style="font-size: 20px;" onclick=add_grade()><br><br>
+  
+
+  <input type="text" class="name" id="name" style="font-size: 20px; display: none;"><br>
+
+  <input type="text" class="grade" id="grade" style="font-size: 20px; display: none;"><br>
+
+  <input type="button" value="Submit" style="font-size: 20px; display: none;" id="sub" onclick=add_data()>
+
+</div>
+
+<div style="font-size: 20px;">
+  
+
+  <p id=p></p>
+
+</div>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
